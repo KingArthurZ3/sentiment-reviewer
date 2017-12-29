@@ -9,10 +9,10 @@ I used this dataset with 10,000 yelp reviews and classified them based on these 
 1. **business_id** (ID of the business being reviewed)
 2. **date** (Day the review was posted)
 3. **review_id** (ID for the posted review)
-4. **stars** (1?5 rating for the business)
+4. **stars** (1-5 rating for the business)
 5. **text** (Review text)
 6. **type** (Type of text)
-7. **user_id** (User?s id)
+7. **user_id** (User's id)
 8. {**cool** / **useful** / **funny**} (Comments on the review, given by other users)
 
 After reading the data, I used Seaborn's FacetGrid to create histograms of my text length to the stars rating. I hoped to
