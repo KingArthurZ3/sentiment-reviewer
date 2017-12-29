@@ -40,6 +40,7 @@ X = bow_transformer.transform(X)
 density = (100.0 * X.nnz / (X.shape[0] * X.shape[1]))
 
 #split training and testing data
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
 
 nb = MultinomialNB()
