@@ -6,14 +6,14 @@ I trained this network largely using scikit-learn libraries and visualized my tr
 
 I used this dataset with 10,000 yelp reviews and classified them based on these 10 entries.
 
-**business_id** (ID of the business being reviewed)
-**date** (Day the review was posted)
-**review_id** (ID for the posted review)
-**stars** (1?5 rating for the business)
-**text** (Review text)
-**type** (Type of text)
-**user_id** (User?s id)
-{**cool** / **useful** / **funny**} (Comments on the review, given by other users)
+1. **business_id** (ID of the business being reviewed)
+2. **date** (Day the review was posted)
+3. **review_id** (ID for the posted review)
+4. **stars** (1?5 rating for the business)
+5. **text** (Review text)
+6. **type** (Type of text)
+7. **user_id** (User?s id)
+8. {**cool** / **useful** / **funny**} (Comments on the review, given by other users)
 
 After reading the data, I used Seaborn's FacetGrid to create histograms of my text length to the stars rating. I hoped to
 identify any relationships between these two factors.
@@ -36,7 +36,7 @@ or funny. I visualized these correlations using Seaborn's heatmap.
 Based on the map, funny is strongly correlated with useful, and useful appears to be correlated with text length. There's
 also a negative correlation between cool and the other features.
 
-##Text Processing
+## Text Processing
 
 I used a bag-of-words approach to convert my corpus to a vector of words, which is necessary for classifying it. I did so
 by using the NLTK library to remove punctuations and stopwords.
